@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/order
 import axiosInstance from '../../lib/axiosInstance';
 import { NextResponse } from 'next/server';
 import { ShopData } from '@/types';

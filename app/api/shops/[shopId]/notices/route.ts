@@ -37,6 +37,7 @@ export async function GET(request: Request, { params }: { params: { shopId: stri
 
 export async function POST(request: Request, { params }: { params: { shopId: string } }): Promise<NextResponse> {
   const { shopId } = params;
+  // eslint-disable-next-line spaced-comment
   let noticeData: NoticeData; //Omit<NoticeData['item'], 'id' | 'closed'>;
 
   const token = request.headers.get('Authorization')?.split(' ')[1];
