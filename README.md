@@ -1,36 +1,144 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 프로젝트 <더 줄게>
 
-## Getting Started
+## 개요
 
-First, run the development server:
+- 제목: 더 줄게
+- 소개:  급하게 일손이 필요한 자리에 더 많은 시급을 제공해서 아르바이트생을 구할 수 있는 서비스
+- 디자인 시안: [The-julge 시안 확인하러 바로가기](https://www.figma.com/file/UJfAmRiZuFlVlb22nHeixd/%EB%8D%94%EC%A4%84%EA%B2%8C?type=design&mode=design&t=bnCeWn143iFtRG6x-0)
+- Swagger 문서: [The-julge 스웨거 문서](https://bootcamp-api.codeit.kr/docs/the-julge)
+- API 문서: [The-julge API 문서 확인하러 바로가기](https://www.notion.so/API-10a715ce7c2240fd9d16aa47b5a6bc34?pvs=21)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<details>
+  <summary>요구사항</summary>
+  
+  ### 상단 네비게이션바
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 사장님 이메일로 로그인하면 오른쪽 상단은 '내 가게' 버튼, 알바님 이메일로 로그인하면 오른쪽 상단에 '내 프로필' 버튼 생성
+- 오른쪽 '내 프로필' 버튼을 누르면 내 프로필 페이지로 이동
+- '로그아웃' 버튼을 클릭하면 공고 리스트 페이지로 이동
+- '알람' 버튼을 클릭하면 나에게 온 알림 확인
+- 검색창에서 검색어를 입력하고 '엔터키'를 누르면 가게 이름에 검색어가 포함된 공고만 보여줌
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 로그인 페이지
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '회원가입하기' 버튼을 클릭하면 회원가입 페이지로 이동
+- 유효한 이메일과 비밀번호를 입력하고 '로그인' 버튼을 클릭하면 공고 리스트 페이지로 이동
+- 로그인 페이지에는 네비게이션바가 없음
+- 비밀번호가 틀릴 경우 “비밀번호가 일치하지 않습니다.” 경고 창을 보여줌
+- 이메일 input에서 focus out 일 때, 값이 이메일 형식이 아닐 경우 input에 빨강색 테두리와 아래에 “이메일 형식으로 작성해 주세요.” 빨강색 에러 메시지 표시
+- 비밀번호 input에서 focus out 일 때, 비밀번호 길이가 8자 미만일때 input에 빨강색 테두리와 아래에 “8자 이상 작성해 주세요.” 빨강색 에러 메시지 표시
+- 로그인 성공 시 엑세스 토큰 발급
 
-## Learn More
+### 회원가입 페이지
 
-To learn more about Next.js, take a look at the following resources:
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '로그인하기' 버튼을 클릭하면 로그인 페이지로 이동
+- 이메일 input에서 focus out 일 때, 값이 이메일 형식이 아닐 경우 이메일 input에 빨강색 테두리와 아래에 “이메일 형식으로 작성해 주세요.” 빨강색 에러 메시지 표시
+- 비밀번호 input에서 focus out 일 때 비밀번호 input 값 길이가 8자 이상이 아닐 경우 비밀번호 input에 빨강색 테두리와 아래에 “8자 이상 입력해주세요.” 빨강색 에러 메시지 표시
+- 비밀번호 확인 input에서 focus out 일 때 비밀번호 input 값과 비밀번호 확인 input 값이 다를 경우 비밀번호 확인 input에 빨강색 테두리와 아래에 “비밀번호가 일치하지 않습니다.” 빨강색 에러 메시지 표시
+- 중복되는 이메일로 회원가입 시도 시 '이미 사용 중인 이메일입니다' 모달창 표시
+- 활성화된 '가입하기' 버튼을 누르면 “가입이 완료되었습니다” alert 창을 보여주고 로그인 페이지로 이동
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 사장님 (내 가게)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- 내 가게 개수는 1개로 한정
+- '가게 등록하기' 버튼 클릭 시 가게 정보 등록 페이지로 이동
 
-## Deploy on Vercel
+### 사장님 (가게 정보 등록)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '등록하기' 버튼을 클릭하면 가게 등록이 완료되고 “등록이 완료되었습니다.” alert 창 표시
+- '확인' 버튼을 누르면 가게 정보 상세 페이지로 이동
+- 주소 영역은 input으로 진행하거나 분류와 동일한 드롭다운으로 진행 가능
+- 주소 제한
+    - “서울시 종로구 | 서울시 중구 | 서울시 용산구 | 서울시 성동구 | 서울시 광진구 | 서울시 동대문구 | 서울시 중랑구 | 서울시 성북구 | 서울시 강북구 | 서울시 도봉구 | 서울시 노원구 | 서울시 은평구 | 서울시 서대문구 | 서울시 마포구 | 서울시 양천구 | 서울시 강서구 | 서울시 구로구 | 서울시 금천구 | 서울시 영등포구 | 서울시 동작구 | 서울시 관악구 | 서울시 서초구 | 서울시 강남구 | 서울시 송파구 | 서울시 강동구”로 제한
+- 분류 선택지 제한
+    - “한식 | 중식 | 일식 | 양식 | 분식 | 카페 | 편의점 | 기타” 중 선택 가능
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 사장님 (가게 정보 편집)
+
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '완료' 버튼 클릭 시 가게 정보 수정이 완료되고 “수정이 완료되었습니다.” alert 창 표시
+
+### 사장님 (가게 정보 상세)
+
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '편집하기' 버튼을 누르면 가게 정보 편집하기 페이지로 이동
+- '공고 등록하기' 버튼을 클릭하면 공고 등록하기 페이지로 이동
+
+### 사장님 (공고 등록)
+
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '등록하기' 버튼을 누르면 공고가 등록되고 '등록이 완료되었습니다.' alert 창 표시
+- '확인' 버튼을 누르면 공고 상세 페이지로 이동
+
+### 사장님 (공고 상세)
+
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '공고 편집하기' 버튼을 누르면 공고 편집하기 페이지로 이동
+- '거절하기' 버튼을 클릭하면 alert 창이 뜨고 신청 거절
+- '승인하기' 버튼을 클릭하면 alert 창이 뜨고 신청 승인
+
+### 알바님 (내 프로필 상세)
+
+- '내 프로필 등록하기' 버튼을 클릭하면 내 프로필 등록하기 페이지로 이동
+- '편집하기' 버튼을 클릭하여 내 프로필 수정 가능
+- '공고 보러가기' 버튼을 누르면 공고 리스트 페이지로 이동
+- 신청 내역이 없다면 공고 보러가기 버튼 표시
+- 신청 내역이 있다면 결과를 페이지네이션으로 표시
+- 오른쪽 상단 '알림' 버튼을 누르면 신청 결과 확인
+
+### 알바님 (내 프로필 등록)
+
+- '등록하기' 버튼을 누르면 “등록이 완료되었습니다.” alert 창 표시
+- '확인' 버튼을 누르면 프로필 등록 완료
+
+### 공고 리스트
+
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- 공고 카드를 클릭하면 해당 공고 상세 페이지로 이동
+- 맞춤 공고는 주소를 기준으로 설정
+- 공고 정렬 기준은 마감임박순, 시급 많은 순, 시간 적은 순, 가나다순으로 설정
+- 전체 공고는 페이지네이션으로 구현
+- 상세 필터
+    - 상세 필터 괄호 안의 숫자는 위치에서 선택한 개수 + 시작일 설정 유무 + 금액 설정 유무
+    - '적용하기' 버튼을 누르면 선택한 필터 적용
+    - '초기화' 버튼을 누르면 선택한 필터 내용 초기화
+
+### 공고 상세
+
+- '로고 버튼'을 클릭하면 공고 리스트 페이지로 이동
+- '신청하기' 버튼을 누르면 프로필 등록이 되어있지 않을 경우 ”내 프로필을 먼저 등록해 주세요.” alert 창 표시 후 '확인' 버튼 클릭 시 프로필 등록 페이지로 이동
+- '신청하기' 버튼을 누르면 프로필 등록이 되어있을 경우 신청 완료
+- 이미 신청한 공고에서 '취소하기' 버튼 클릭 시 “신청을 취소하시겠어요?” alert 창 표시 후 '취소하기' 버튼 클릭 시 지원 취소 후 '신청하기' 버튼으로 변경
+- 공고 타입
+    - 구인하지 못했지만, 공고 기간이 지난 경우 지난 공고로 설정
+    - 지정한 구인이 모집 완료된 경우 마감 완료로 설정
+- 최근에 본 공고
+    - 최신 순으로 최대 6개까지 표시
+    - 6개를 초과할 경우 가장 과거의 공고 미표시
+    - 최근에 본 공고를 위한 별도 API는 없으며, 브라우저 저장소 활용
+
+
+</details>
+
+## UserFlow
+![UserFlow](https://github.com/jose0229/the-julge/assets/109906670/82dd3612-7fad-4f85-a03c-1699894a3c05)
+
+### 기술 스택 & 협업 툴
+
+**기술 스택**
+
+- React.js
+- Next.js (v14)
+- tailwind
+- axios
+- ts
+
+**협업 툴**
+
+- Github
+- Figma
+- Notion [협업 과정 확인하기](https://typhoon-need-dad.notion.site/e9ffedec95e04d3e9618407a3274b364?v=339c3c0e53524f0e87f662e0cec4a083&pvs=74)
