@@ -32,10 +32,18 @@ export default function RegisterPagination() {
   const [userData, setUserData] = useState<Application[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-
-  const token = localStorage.getItem('token');
-  const userId = localStorage.getItem('userId');
+  const [token, setToken] = useState<string | null>(null);
+  const [userId, setUserId] = useState<string | null>(null);
   const itemsPerPage = 5;
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedToken = localStorage.getItem('token');
+      const storedUserId = localStorage.getItem('userId');
+      setToken(storedToken);
+      setUserId(storedUserId);
+    }
+  }, []);
 
   useEffect(() => {
     getApplyData();

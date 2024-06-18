@@ -3,8 +3,18 @@ import { useEffect } from 'react';
 import axios from 'axios';
 
 export default function ProfileRegister() {
-  const token = localStorage.getItem('token');
-  const userId = localStorage.getItem('userId');
+  const [token, setToken] = useState<string | null>(null);
+  const [userId, setUserId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedToken = localStorage.getItem('token');
+      const storedUserId = localStorage.getItem('userId');
+      setToken(storedToken);
+      setUserId(storedUserId);
+    }
+  }, []);
+
 
   useEffect(() => {
     async function getApplyData() {
