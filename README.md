@@ -63,19 +63,17 @@ The Julge는 급하게 일손이 필요한 자리에 더 많은 시급을 제공
 **- Framework**
 
 <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+
 
 **- Programming Language** 
 
-<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> 
 <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> 
 
 **- CSS** 
 
 <img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"> 
-
-**- State Management Library** 
-
-<img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"> 
 
 **- Version Control** 
 
@@ -95,6 +93,9 @@ The Julge는 급하게 일손이 필요한 자리에 더 많은 시급을 제공
 
 **- Others** 
 
+<img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white">
+<img src="https://img.shields.io/badge/formik-2563EB?style=for-the-badge&logo=formik&logoColor=white">
+<img src="https://img.shields.io/badge/date_fns-770C56?style=for-the-badge&logo=datefns&logoColor=white">
 <img src="https://img.shields.io/badge/eslint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white">
 <img src="https://img.shields.io/badge/prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white"> 
 
