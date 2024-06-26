@@ -1,5 +1,22 @@
 # 코드잇 스프린트 5기 파트3 7팀
 
+## 목차
+[1. The Julge](#-the-julge)
+
+[2. 배포 링크](#-배포-링크)
+
+[3. 개발 기간](#-개발-기간)
+
+[4. 기술 목표](#-기술-목표)
+
+[5. 팀원 소개](#-팀원-소개)
+
+[6. 기술 스택](#-기술-스택)
+
+[7. UserFlow](#-userflow)
+
+[8. 주요 기능](#-주요-기능)
+
 <br><br>
 ## 🧑‍🍳 The Julge
 ![Desktop](https://github.com/jose0229/the-julge/assets/109906670/43c44751-5d1c-48cf-ad2c-1c71edb5f2fa)
@@ -83,7 +100,7 @@ The Julge는 급하게 일손이 필요한 자리에 더 많은 시급을 제공
 ## 🗺️ UserFlow
 <details>
 <summary> UserFlow 확인하기 </summary><br>
-<img src="https://github.com/jose0229/the-julge/assets/109906670/82dd3612-7fad-4f85-a03c-1699894a3c05.png" width="800"/>
+<img src="https://github.com/jose0229/the-julge/assets/109906670/82dd3612-7fad-4f85-a03c-1699894a3c05.png" width="800"/></details>
 
 <br><br>
 ## 💻 주요 기능
@@ -200,3 +217,9 @@ The Julge는 급하게 일손이 필요한 자리에 더 많은 시급을 제공
     - 6개를 초과할 경우 가장 과거의 공고 미표시
     - 최근에 본 공고를 위한 별도 API는 없으며, 브라우저 저장소 활용
 </details>
+
+<div align="right">
+  
+  [목차로 이동](#목차)
+  
+</div>
