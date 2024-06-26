@@ -68,7 +68,6 @@ The Julge는 급하게 일손이 필요한 자리에 더 많은 시급을 제공
 
 **- Programming Language** 
 
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> 
 <img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> 
 
 **- CSS** 
