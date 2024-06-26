@@ -1,15 +1,94 @@
-# 프로젝트 <더 줄게>
+# 코드잇 스프린트 5기 파트3 7팀
 
-## 개요
+<br><br>
+## 🧑‍🍳 The Julge
+![Desktop](https://github.com/jose0229/the-julge/assets/109906670/43c44751-5d1c-48cf-ad2c-1c71edb5f2fa)
+The Julge는 급하게 일손이 필요한 자리에 더 많은 시급을 제공해서 아르바이트생을 구할 수 있는 서비스입니다.
 
-- 제목: 더 줄게
-- 소개:  급하게 일손이 필요한 자리에 더 많은 시급을 제공해서 아르바이트생을 구할 수 있는 서비스
-- 디자인 시안: [The-julge 시안 확인하러 바로가기](https://www.figma.com/file/UJfAmRiZuFlVlb22nHeixd/%EB%8D%94%EC%A4%84%EA%B2%8C?type=design&mode=design&t=bnCeWn143iFtRG6x-0)
-- Swagger 문서: [The-julge 스웨거 문서](https://bootcamp-api.codeit.kr/docs/the-julge)
-- API 문서: [The-julge API 문서 확인하러 바로가기](https://www.notion.so/API-10a715ce7c2240fd9d16aa47b5a6bc34?pvs=21)
+<br><br>
+## 🔗 배포 링크
+> [The Julge](https://main--the-julge-5-7.netlify.app/notice-list)
 
+<br><br>
+## 📅 개발 기간
+> 2024 / 5 / 30 (목) ~ 6 / 18 (화)
+
+<br><br>
+## 🚩 기술 목표
+
+### 사용자 친화적인 인터페이스 제공
+> Next.js와 Tailwind CSS를 사용하여 반응형 웹 디자인을 구현해 직관적이고 반응이 빠른 사용자 인터페이스를 제공하여 사용자가 공고를 쉽게 탐색하고 지원할 수 있도록 합니다.
+
+### 효율적인 데이터 관리
+> Context API를 활용하여 전역 상태를 관리하고, 로컬 스토리지를 사용하여 최근 본 공고와 같은 데이터를 저장해 공고 데이터와 사용자 데이터를 효율적으로 관리하고, 필요한 데이터를 빠르게 로드할 수 있도록 합니다.
+
+### 신뢰성 있는 데이터 통신
+> Axios를 사용하여 API 호출을 처리하고, 필요한 데이터는 클라이언트 측에서 비동기적으로 로드합니다. 또한, 오류 처리를 통해 사용자가 오류 상황에서도 원활하게 사용할 수 있도록 합니다.
+
+### 보안 및 인증 관리
+> JWT(JSON Web Token)를 사용하여 사용자 인증을 처리하고, 민감한 데이터는 로컬 스토리지나 쿠키를 통해 안전하게 저장해 안전한 서비스를 제공합니다.
+
+### 유연한 확장성
+> 프로젝트가 성장함에 따라 기능을 확장하고 유지 보수할 수 있도록 유연한 아키텍처를 설계합니다.
+
+<br><br>
+## 🧑‍🤝‍🧑 팀원 소개
+
+|[김현서](https://github.com/hyunseo11)|[박준영](https://github.com/JunYoungee)|[이유진](https://github.com/newjinlee)|[임상훈](https://github.com/jose0229)|[전유민](https://github.com/JeonYumin94)|
+|----|----|----|----|----|
+|<img src="https://github.com/jose0229/the-julge/assets/109906670/4c2ae408-83cf-4010-a4f5-6c2825612cbe.png" height="120"/>|<img src="https://github.com/jose0229/the-julge/assets/109906670/296b74f1-b752-43af-b350-e8dbdad27185.png" height="120"/>|<img src="https://github.com/jose0229/the-julge/assets/109906670/c0908c56-ff86-47b5-b35c-1513f83a456b.png" height="120"/>|<img src="https://github.com/jose0229/the-julge/assets/109906670/0a0d04ab-313b-49e8-b73b-d6f595df25ec.png" height="120"/>|<img src="https://github.com/jose0229/the-julge/assets/109906670/86ab5964-47c8-407b-8e80-97c413c532fe.png" height="120"/>|
+
+<br><br>
+## ⚒️ 기술 스택
+
+**- Framework**
+
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+
+**- Programming Language** 
+
+<img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white">
+<img src="https://img.shields.io/badge/typescript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> 
+
+**- CSS** 
+
+<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"> 
+
+**- State Management Library** 
+
+<img src="https://img.shields.io/badge/axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"> 
+
+**- Version Control** 
+
+<img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> 
+
+**- Design** 
+
+<img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> 
+
+**- Communication** 
+
+<img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+<img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+
+[협업 과정 확인하기](https://typhoon-need-dad.notion.site/e9ffedec95e04d3e9618407a3274b364?v=339c3c0e53524f0e87f662e0cec4a083&pvs=74) 
+
+**- Others** 
+
+<img src="https://img.shields.io/badge/eslint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white">
+<img src="https://img.shields.io/badge/prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white"> 
+
+<br><br>
+## 🗺️ UserFlow
 <details>
-  <summary>요구사항</summary>
+<summary> UserFlow 확인하기 </summary><br>
+<img src="https://github.com/jose0229/the-julge/assets/109906670/82dd3612-7fad-4f85-a03c-1699894a3c05.png" width="800"/>
+
+<br><br>
+## 💻 주요 기능
+<details>
+  <summary>주요 기능 확인하기</summary>
   
   ### 상단 네비게이션바
 
@@ -120,25 +199,4 @@
     - 최신 순으로 최대 6개까지 표시
     - 6개를 초과할 경우 가장 과거의 공고 미표시
     - 최근에 본 공고를 위한 별도 API는 없으며, 브라우저 저장소 활용
-
-
 </details>
-
-## UserFlow
-![UserFlow](https://github.com/jose0229/the-julge/assets/109906670/82dd3612-7fad-4f85-a03c-1699894a3c05)
-
-### 기술 스택 & 협업 툴
-
-**기술 스택**
-
-- React.js
-- Next.js (v14)
-- tailwind
-- axios
-- ts
-
-**협업 툴**
-
-- Github
-- Figma
-- Notion [협업 과정 확인하기](https://typhoon-need-dad.notion.site/e9ffedec95e04d3e9618407a3274b364?v=339c3c0e53524f0e87f662e0cec4a083&pvs=74)
