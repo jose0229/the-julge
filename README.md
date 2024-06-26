@@ -17,6 +17,8 @@
 
 [8. 주요 기능](#-주요-기능)
 
+[9. 시연 영상](#-시연-영상)
+
 <br><br>
 ## 🧑‍🍳 The Julge
 ![Desktop](https://github.com/jose0229/the-julge/assets/109906670/43c44751-5d1c-48cf-ad2c-1c71edb5f2fa)
@@ -216,6 +218,28 @@ The Julge는 급하게 일손이 필요한 자리에 더 많은 시급을 제공
     - 최신 순으로 최대 6개까지 표시
     - 6개를 초과할 경우 가장 과거의 공고 미표시
     - 최근에 본 공고를 위한 별도 API는 없으며, 브라우저 저장소 활용
+</details>
+
+<br><br>
+## 🎞️ 시연 영상
+<details>
+  <summary>사장님 로그인 및 내 가게, 내 공고 등록하기</summary>
+  <img src="https://github.com/jose0229/the-julge/assets/109906670/f677fe15-92ca-4749-921a-6d29f9e9bece.gif" width="500"/>
+  <img src="https://github.com/jose0229/the-julge/assets/109906670/1a6a8cb6-2d5e-44b1-983a-464b1f5a1b3f.gif" width="500"/><br>
+</details>
+<details>
+  <summary>알바생 회원가입, 로그인 및 프로필 등록하기</summary>
+  <img src="https://github.com/jose0229/the-julge/assets/109906670/8a8e7abf-d1c4-4c98-8153-49691510ed6c.gif" width="500"/>
+  <img src="https://github.com/jose0229/the-julge/assets/109906670/e8d7d248-711f-4545-808a-20cbeb65579d.gif" width="500"/><br>
+</details>
+<details>
+  <summary>알바생 공고 확인 및 신청, 취소하기</summary>
+  <img src="https://github.com/jose0229/the-julge/assets/109906670/c6d58bcd-a3e2-4a5b-b955-48cf32be2f25.gif" width="500"/>
+  <img src="https://github.com/jose0229/the-julge/assets/109906670/7e8a44d4-0981-4ac7-b58a-8373eaec183b.gif" width="500"/><br>
+</details>
+<details>
+  <summary>사장님 신청자 확인, 신청 수락하기</summary>
+  <img src="https://github.com/jose0229/the-julge/assets/109906670/76c8acf9-befc-473d-9020-616ea28c1d03.gif" width="500"/><br>
 </details>
 
 <div align="right">
